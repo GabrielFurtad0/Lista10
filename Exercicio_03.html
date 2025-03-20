@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="algoritimos()">Diga algo sobre a matéria de Algoritmos</button>
+    <div id="div_algoritimos"></div>
+</body>
+<script>
+    function algoritimos(){
+        var alg = 1
+        while (alg <= 7){
+            div_algoritimos.innerHTML += `${alg}.É a melhor materia de todas(talvez)<br>`
+            alg ++;
+        }
+    }
+</script>
+</html>

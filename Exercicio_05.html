@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="cabal()">Números cabalistas</button>
+    <div id="div_cabal"></div>
+</body>
+<script>
+    function cabal(){
+        num = 0
+        while(num <= 30){
+            if (num == 3 || num == 4 || num == 7 || num == 10 || num == 12)   {
+                div_cabal.innerHTML += ``  
+            }else (div_cabal.innerHTML += `${num}<br>`)
+            num ++;     
+        }
+    }
+</script>
+</html>
