@@ -6,6 +6,26 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <label for="ipt_numero">Insira um numero: </label>
+  <input type="text" id="ipt_numero">
+
+  <label for="ipt_frase">Insira aqui uma frase: </label>
+  <input type="text" id="ipt_frase">
+
+  <button onclick="papagaio()">Papagaio</button>
+  <div id="div_papagaio"></div>
+
 </body>
+<script>
+  function papagaio(){
+    var num = Number(ipt_numero.value)
+    var frase = ipt_frase.value
+    var contador = 0
+    
+    while (contador != num){
+      div_papagaio.innerHTML += `${frase}<br>`
+      contador ++
+    }
+  }
+</script>
 </html>

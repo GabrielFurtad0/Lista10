@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <label for="ipt_numero">Insira um número entre 20 e 100</label>
     <input type="text" id="ipt_numero">
@@ -14,14 +16,19 @@
     <div id="div_cinco"></div>
 </body>
 <script>
-    function cinco(){
+    function cinco() {
         var num = Number(ipt_numero.value)
-        while (num >= 0){
-            div_cinco.innerHTML += `${num}<br>`
-            num -= 5;
+        num2 = 0
+        if (num >= 0 && num <= 100) {
+
+            while (num2 <= num) {
+                div_cinco.innerHTML += `${num2}<br>`
+                num2 += 5;
+            }
         }
 
 
     }
 </script>
+
 </html>
